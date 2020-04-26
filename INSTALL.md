@@ -26,7 +26,7 @@ git clone https://github.com/facebookresearch/detectron2.git
 cd detectron2 && python -m pip install -e .
 
 # Or if you are on macOS
-# CC=clang CXX=clang++ python -m pip install -e .
+# CC=clang CXX=clang++ CFLAGS='-stdlib=libc++' python -m pip install -e .
 ```
 
 To __rebuild__ detectron2 that's built from a local clone, use `rm -rf build/ **/*.so` to clean the
